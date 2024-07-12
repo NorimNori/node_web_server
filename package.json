@@ -1,0 +1,17 @@
+{
+  "name": "proyecto-web-server",
+  "version": "0.0.1",
+  "description": "Levantar un web-server",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "author": "Norimaqi",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "env-var": "^7.5.0",
+    "express": "^4.19.2",
+    "nodemon": "^3.1.4"
+  }
+}

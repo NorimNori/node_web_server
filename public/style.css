@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Signika:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Press Start 2P', cursive;
+}
+body{
+    background-color: black;
+}
+header{
+   position: fixed;
+   top: 0;
+   background: #FF0000;
+   width: 100%;
+   height: 20vh;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row-reverse;
+   justify-content: space-evenly;
+   align-items: center;
+   z-index: 6;
+}
+#inputs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#title{
+    width: 25vw;
+    height: 8vw;
+}
+#inputs{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    height: 70%;
+}
+#spinner {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+}
+.search{
+   height: 30%;
+   width: 30%;
+   padding: 1em;
+   margin: 1.3rem;
+   font-size: 0.8em;
+   border-radius: 20px;
+   border: none;
+   outline: none;
+}
+.poke_box{
+    margin-top: 20vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+.poke_node{
+    width: 300px;
+    height: 300px;
+    margin: 70px 20px;
+    border: 3px solid #3B4CCA;
+    border-radius: 20px;
+    color: #3B4CCA;
+    font-weight: 600;
+    font-size: 0.8em;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    background: #FFDE00;
+    padding: 20px;
+    z-index: 1;
+}
+.poke_node:hover{
+    scale: 1.3;
+    transition: 0.5s ease-in-out;
+    height: 465px;
+    z-index: 4;
+}
+.poke_node .poke_ball{
+    position: absolute;
+    font-weight: 200;
+    font-size: 0.7em;
+    max-width: 286px;
+    height: 200px;
+    border-radius: 20px;
+    background: rgba(0,0,0,0.5);
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s ease-in-out;
+}
+.poke_node .poke_ball:hover{
+    height: 406px;
+    z-index: 5;
+}
+.poke_node .poke_ball .poke_container{
+    position: relative;
+    width: 260px; 
+    height: 260px;
+    top: 10px;
+    z-index: 2;
+    background-image: linear-gradient(to left top, #3b4cca, #684ad8, #9143e2, #b935e9, #e112eb);
+    border-radius: 50%;
+    box-shadow: 1px 20px rgba(0,0,0,0.5);
+}
+.poke_ball .poke_container img{
+    position: relative;
+    max-width: 100%;
+    top: -40px;
+    object-fit: cover;
+}
+.poke_node .poke_ball .info{
+    position: relative;
+    margin-top: 340px;
+    padding: 10px 15px;
+    text-align: center;
+    color: whitesmoke;
+    visibility:  hidden;
+    opacity: 0;
+    transition:  0.3s ease-in-out;
+}
+.poke_node .poke_ball:hover .info{
+    visibility: visible;
+    opacity:  1;
+    margin-top: 40px;
+    transition-delay:  0.25s;
+    z-index: 3;
+}  
