@@ -116,7 +116,7 @@ document.addEventListener("keyup", e => {
 
 
 
-pokeGet(151);
+pokeGet(200);
 
 
  
