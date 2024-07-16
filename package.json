@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "Levantar un web-server",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "dev": "nodemon src/index.js"
   },
@@ -13,5 +14,8 @@
     "env-var": "^7.5.0",
     "express": "^4.19.2",
     "nodemon": "^3.1.4"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21"
   }
 }

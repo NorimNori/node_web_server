@@ -1,5 +1,5 @@
-const { envs } = require('./config/evn')
-const { startServer } = require('./server/server')
+import { envs } from './config/evn.js'
+import { startServer } from './server/server.js'
 
 //Se define primero la funcion y luego se hace la autoconvocacion .
 
